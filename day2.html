@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Day 2 - Homelab Journal</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Day 2</h1>
+
+        <p>
+            Today I acquired an Optiplex that I will eventually use for my pfSense machine. 
+            It will run "Bare Metal" and act as my network’s firewall. 
+            I need to get a network card for it so it can pass the connection through itself, from what I understand.
+        </p>
+
+        <p>
+            On another note, I installed another VM and set up Pi-Hole to manage my network’s DNS. 
+            I originally configured it to run network-wide through my router (TP-Link AXE750), 
+            but I have concerns about the gaming consoles on the network. 
+            For now, I set the DNS on all my machines to the VM’s local IP and configured the secondary DNS as Google’s 8.8.8.8 just in case.
+        </p>
+
+        <a href="#img1">
+            <img src="Images/image-2.png" alt="Screenshot of the VM running Pi-Hole overnight">
+        </a>
+        <em>Screenshot of the VM running Pi-Hole overnight.</em>
+        <div id="img1" class="lightbox">
+            <img src="Images/image-2.png" alt="Screenshot of the VM running Pi-Hole overnight">
+        </div>
+
+        <p>
+            After I figured that out, I set up a VM running Home Assistant. 
+            I created two user accounts and added a few of my home devices, including the living room TV. 
+            Now I no longer have to shout to turn it down from the PC, I can just open the browser and control it myself.
+        </p>
+
+        <a href="#img2">
+            <img src="Images/image-5.png" alt="Screenshot of the VM running Home Assistant">
+        </a>
+        <em>Screenshot of the VM running Home Assistant.</em>
+        <div id="img2" class="lightbox">
+            <img src="Images/image-5.png" alt="Screenshot of the VM running Home Assistant">
+        </div>
+
+        <p>
+            I continued working and assigned both VMs their own IP addresses. 
+            I even successfully pinged each one from the other.
+        </p>
+
+        <a href="#img3">
+            <img src="Images/image-4.png" alt="Screenshot of the Web UI for Home Assistant">
+        </a>
+        <em>Screenshot of the Web UI for Home Assistant.</em>
+        <div id="img3" class="lightbox">
+            <img src="Images/image-4.png" alt="Screenshot of the Web UI for Home Assistant">
+        </div>
+
+        <p><a href="index.html">&larr; Back to Journal</a></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
