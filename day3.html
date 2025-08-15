@@ -4,46 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Day 2 - Homelab Journal</title>
-
+    <title>Entry 3 - Homelab Journal</title>
 </head>
 <body>
     <div class="container">
-        <h1>Day 3</h1>
-
-        <p>
-            I started today's ventures by installing a VM for this web server that this site is hosted on.    
-            I used Ubuntu Server as the base image and configured it with Nginx and SSH.
-            This process was smooth and straightforward.
-        </p>
-
-        <p>
-            I downloaded Rufus and the Ubuntu ISO to create a bootable drive to use on the OptiPlex I acquired. 
-            I plan to install pfSense on it to use as a dedicated machine for my network-wide firewall later, but I wanted something other than Windows 7.
-        </p>
-
-        <p>
-            I received some of the cables I ordered today: Cat 6 Ethernet cables, a VGA cable that it turns out I did not need right now, but it is always good to have a spare on the shelf,
-            or in the box, if you're like myself. 
-        </p>
-
-        <p>            
-            I also took time to put Windows 11 Pro on my laptop. It really did not like Windows 10 Home. It seems to be running quite a bit better now.
-            I am going to try to install VirtualBox on it so I can practice some stuff when I am away from home. That was a bit of a hassle.
-            Since it was a  Windows Home edition. I had to write a few files and put them into the bootable USB I made. So that Windows Installer would
-            ignore the Home edition Registry Key that was in the laptops BIOS.
-        </p>
-
-        <a href="#img1">
-            <img src="Images/image-6.png" alt="Screenshot of VSCode and the Live server instance of the site as I work.">
-        </a>
-        <em>Screenshot of VSCode and the Live server instance of the site as I work.</em>
-
-        <div id="img1" class="lightbox">
-            <img src="Images/image-6.png" alt="Screenshot of VSCode and the Live server instance of the site as I work.">
+        <div class="header">
+            <h1>Entry 3</h1>
+            <div class="date">Setting up Self-Hosted Web Server</div>
         </div>
 
-        <p><a href="index.html">&larr; Back to Journal</a></p>
+        <div class="content-section">
+            <p>
+                I started today's ventures by installing a VM for this web server that this site is hosted on.    
+                I used Ubuntu Server as the base image and configured it with Nginx and SSH.
+                This process was smooth and straightforward.
+            <br>
+            <br>
+                I downloaded Rufus and the Ubuntu ISO to create a bootable drive to use on the OptiPlex I acquired. 
+                I plan to install pfSense on it to use as a dedicated machine for my network-wide firewall later, but I wanted something other than Windows 7.
+            <br>
+            <br>
+                I received some of the cables I ordered today: Cat 6 Ethernet cables, a VGA cable that it turns out I did not need right now, but it is always good to have a spare on the shelf,
+                or in the box, if you're like myself. 
+            </p>
+        </div>
+
+                <div class="image-container">
+            <a href="#img1">
+                <img src="Images/image-6.png" alt="Screenshot of VSCode and the Live server instance of the site as I work.">
+            </a>
+            <span class="image-caption">Screenshot of VSCode and the Live server instance of the site as I work.</span>
+        </div>
+        
+        <div id="img1" class="lightbox">
+            <span class="lightbox-close">&times;</span>
+            <div class="lightbox-content">
+                <img src="Images/image-6.png" alt="Screenshot of VSCode and the Live server instance of the site as I work.">
+            </div>
+        </div>
+
+        <div class="content-section">
+            <p>            
+                I also took time to put Windows 11 Pro on my laptop. It really did not like Windows 10 Home. It seems to be running quite a bit better now.
+                I am going to try to install VirtualBox on it so I can practice some stuff when I am away from home. That was a bit of a hassle.
+                Since it was a Windows Home edition, I had to write a few files and put them into the bootable USB I made so that Windows Installer would
+                ignore the Home edition Registry Key that was in the laptop's BIOS.
+            </p>
+        </div>
+
+
+
+        <a href="index.html" class="back-link">&larr; Back to Journal</a>
     </div>
     <script src="script.js"></script>
 </body>

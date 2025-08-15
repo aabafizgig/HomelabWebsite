@@ -1,4 +1,17 @@
-## WinSCP (Windows) or FileZilla (cross-platform)
+## USING GITHUB
+# Whenever you want to update manually in SSH:
+cd /var/www/html
+sudo git pull
+
+
+# edit files in windows then Cron will automatically update the files every 5 minutes or you can pull manually.
+
+
+
+## SSH into the server
+ssh ubuntuserver@192.168.0.138
+
+## WinSCP 
 
 Connect to your server using:
 
@@ -10,7 +23,7 @@ Password: your-password
 
 Protocol: SFTP (port 22)
 
-# In WinSCP, upload to /home/ubuntuserver/ (no sudo needed).
+# In WinSCP, upload to /home/ubuntuserver/
 
 Then run in SSH:
 
@@ -25,18 +38,15 @@ sudo chown -R www-data:www-data /var/www/html/HomelabWebsite
 sudo chown -R www-data:www-data /var/www/html/HomelabWebsite
 
 # Set secure permissions:
-# Folders = 755 (read+execute for others)
-# Files = 644 (read-only for others)
+
 sudo find /var/www/html/HomelabWebsite -type d -exec chmod 755 {} \;
 sudo find /var/www/html/HomelabWebsite -type f -exec chmod 644 {} \;
 
 
-
-## SSH into the server
-ssh ubuntuserver@192.168.0.138
-
-## to re-upload files use thiss command:
+## to re-upload files via CMD use this command:
 scp -r "C:\Users\forre\Documents\Journey\HomelabWebsite" ubuntuserver@192.168.0.138:~
+
+
 ## When Going Live:
 
 Just install Certbot and run:
